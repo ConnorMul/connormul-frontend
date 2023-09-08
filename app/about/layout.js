@@ -1,5 +1,5 @@
-import styles from './layout.module.css'
+import styles from './about.module.css'
 
 export default function AboutLayout({ children }) {
-    return <section className={styles.container}>{children}</section>
+    return <div className={styles.layoutContainer}>{children}</div>
 }

@@ -1,4 +1,4 @@
-import styles from './layout.module.css'
+import styles from './projects.module.css'
 
 export default function ProjectsLayout({ children }) {
     return <div className={styles.container}>{children}</div>
