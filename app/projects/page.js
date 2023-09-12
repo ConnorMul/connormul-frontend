@@ -1,11 +1,11 @@
-// import { useEffect, useState } from 'react'
 // import { getProjects } from '../../lib/projects'
 import ProjectsLayout from './layout.js'
 import styles from './projects.module.css'
+import ProjectCard from '@/components/projectCard.js'
 
 
 export const metadata = {
-    title: 'My Projects',
+    title: 'Connor Mulholland | Projects',
     description: 'Here are some of my projects!'
 }
 
@@ -20,18 +20,14 @@ const projects = await getProjects()
 export default function Projects() {
     return (
         <>
-            <div>
+            <div className="pageTitleContainer">
                 <h1 className='pageTitle'>Projects</h1>
                 <p>Here are some of my projects!</p>
             </div>
-            <div>
-                <div className={styles.projectList}>
-                    {projects.map((project) => (
-                        <div className={styles.project} key={project.id}>
-                            <h3>{project.name}</h3>
-                        </div>
-                    ))}
-                </div>
+            <div className={styles.projectList}>
+                {projects.map((project) => (
+                    <ProjectCard project={project} key={project.id} image="/Addison.png" />
+                ))}
             </div>
         </>
     )
