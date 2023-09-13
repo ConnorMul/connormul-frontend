@@ -3,11 +3,12 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import date from 'date-and-time'
+import Link from 'next/link'
 
-export default function ProjectCard({ project, image }) {
+export default function ProjectCard({ project }) {
     const [hovered, setHovered] = useState(false)
     const dateObj = new Date(project.updated_at)
-    const formattedDate = date.format(dateObj, 'MMM DD, YYYY hh:mm a')
+    const formattedDate = date.format(dateObj, 'MMM DD, YYYY h:mm A')
 
     return (
         <div 
@@ -25,7 +26,9 @@ export default function ProjectCard({ project, image }) {
                 />
             </div>
             <div className='card-content'>
-                <h3>{project.name}</h3>
+                <Link href={`/projects/${project.id}`}>
+                    <h3>{project.name}</h3>
+                </Link>
                 <p>{project.description}</p>
                 <p>{formattedDate}</p>
             </div>

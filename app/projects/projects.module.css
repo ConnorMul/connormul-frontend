@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    /* padding: 10px; */
+    padding: 10px 0 0 18px;
 }
   
   /* Each project in the list */
@@ -32,7 +32,7 @@
   }
 
   .project:hover {
-    background-color: #e5e5e5;
+    background-color: #e5e5e586;
     cursor: pointer;
   }
   

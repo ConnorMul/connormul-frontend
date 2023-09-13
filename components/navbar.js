@@ -26,7 +26,7 @@ export default function Navbar() {
                     <h1 className={roboto.className}>Connor Mulholland</h1>
                 </Link>
             </div>
-            <div className='navLinks'>
+            <div className={`navLinks ${roboto.className}`}>
                 <Link href="/">
                     Home
                 </Link>

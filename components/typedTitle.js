@@ -9,8 +9,8 @@ export default function TypedTitle() {
     
     useEffect(() => {
       const typed = new Typed('#typed', {
-        strings: ["Hello, I'm Connor!"],
-        typeSpeed: 70,
+        strings: ["Hello World, I'm Connor!"],
+        typeSpeed: 90,
         backSpeed: 50,
         // loop: true,
         showCursor: false,

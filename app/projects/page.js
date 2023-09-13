@@ -22,7 +22,6 @@ export default function Projects() {
         <>
             <div className="pageTitleContainer">
                 <h1 className='pageTitle'>Projects</h1>
-                <p>Here are some of my projects!</p>
             </div>
             <div className={styles.projectList}>
                 {projects.map((project) => (

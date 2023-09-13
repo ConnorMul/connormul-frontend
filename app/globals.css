@@ -24,8 +24,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    background-color: rgb(247, 180, 151);
-    font-family: fantasy, sans-serif;
+    background-color: rgb(255, 255, 255);
+    /* font-family: fantasy, sans-serif; */
 }
 
 .pageTitle {
@@ -109,7 +109,7 @@ body {
 
 /* PROJECT CARDS */
 .card {
-  height: 350px;
+  height: 434px;
   width: 350px;
   border: 1px solid #ccc;
   transition: transform 0.3s ease-in-out;
@@ -119,7 +119,7 @@ body {
 .card-image img {
   width: 100%;
   height: 75%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .card-content {
@@ -136,3 +136,24 @@ body {
 .card.hovered .card-content {
   transform: translateY(-100%);
 }
+
+.main-title {
+  padding: 10%;
+  /* background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,0.6) 0%, rgba(148,187,233,1) 100%); */
+}
+
+.about-card-container {
+  padding: 10%;
+}
+
+.project-list-container {
+  padding: 10%;
+}
+
+.main-gradient {
+  background: url('/testGradient.svg') 0% 0% / contain no-repeat;
+  background-repeat: no-repeat;
+}
+/* GRADIENT BACKGROUND background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
