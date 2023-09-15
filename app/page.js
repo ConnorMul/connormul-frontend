@@ -7,6 +7,9 @@ import TypedTitle from '@/components/typedTitle'
 import Typed from 'typed.js'
 import ProjectsList from '@/components/projectList'
 import AboutCard from '@/components/aboutCard'
+import DownloadButton from '@/components/downloadButton'
+import OpenFile from '@/components/openFileButton'
+import TestModal from '@/components/TestModal'
 
 export const metadata = {
   title: 'Connor Mulholland',
@@ -16,10 +19,13 @@ export const metadata = {
 export default function Home() {
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 main-gradient">
-      <main className="flex flex-col justify-center flex-1 px-20 text-center">
+    <div className="items-center justify-center min-h-screen py-2">
+      <main className="justify-center flex-1 text-center">
         <div className='main-title'>
           <TypedTitle />
+          <br />
+          <h2 className='sub-title text-4xl font-bold'>#1 Software Engineer in the world 3 years in a row*</h2>
+          <p>*according to my mom</p>
           {/* <p className="mt-3 text-2xl">
             I'm a software engineer living in NYC. I like to build apps and write poetry.
           </p>
@@ -29,6 +35,11 @@ export default function Home() {
           <p className="mt-3 text-2xl my-links">
             Check out my <Link href='/projects'>Projects</Link> or Learn more <Link href='/about'>About Me</Link>.
           </p> */}
+        </div>
+        <div className="download-button-container">
+          {/* <OpenFile /> */}
+          <TestModal />
+          <DownloadButton fileUrl='/Connor-Mulhollands-Resume.pdf' fileName='My Resume'/>
         </div>
         <div className="about-card-container">
           <AboutCard />

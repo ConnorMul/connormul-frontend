@@ -18,14 +18,14 @@ export default function AboutCard() {
                         
                     </p>
                 </div>
-                <div className={styles.imgContainer}>
+                {/* <div className={styles.imgContainer}>
                     <Image 
                         src={img}
                         alt="Connor Mulholland"
                         width={470}
                         height={720}
                     />
-                </div>
+                </div> */}
             </div>
         </>
     )

@@ -10,7 +10,7 @@ export default function TypedTitle() {
     useEffect(() => {
       const typed = new Typed('#typed', {
         strings: ["Hello World, I'm Connor!"],
-        typeSpeed: 90,
+        typeSpeed: 100,
         backSpeed: 50,
         // loop: true,
         showCursor: false,
@@ -20,7 +20,7 @@ export default function TypedTitle() {
 
     return (
         <div className='typedContainer'>
-            <h1 className={`text-6xl font-bold hello ${roboto.className}`}>
+            <h1 className={`text-7xl font-bold hello ${roboto.className}`}>
                 <span ref={typedRef} id="typed"></span>
             </h1>
         </div>

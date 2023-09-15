@@ -5,8 +5,8 @@ import { allProjects } from '@/lib/projects'
 export default function ProjectsList() {
     return (
         <>
-            <div className="pageTitleContainer">
-                <h1 className='pageTitle'>Projects</h1>
+            <div className="projectTitleContainer">
+                <h2 className='projectTitle'>Projects</h2>
             </div>
             <div className={styles.projectList}>
                 {allProjects.map((project) => (

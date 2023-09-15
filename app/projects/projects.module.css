@@ -5,14 +5,15 @@
 }
 /* Container for the list of projects */
 .projectList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 10px 0 0 18px;
+  display: flex;
+  flex-direction: wrap;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
 }
   
   /* Each project in the list */
-  .project {
+  /* .project {
     height: 300px;
     padding: 20px;
     margin-bottom: 20px;
@@ -24,7 +25,7 @@
     -webkit-backdrop-filter: blur(4.9px);
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: background-color 0.3s ease;
-  }
+  } */
   
   /* Additional styles for the first item in each row */
   .project:first-child {

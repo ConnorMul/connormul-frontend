@@ -14,10 +14,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`main-gradient ${roboto.className}`}>
         <Navbar />
 
         {children}
+        <MenuIcon />
       </body>
     </html>
   )
