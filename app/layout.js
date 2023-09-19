@@ -16,9 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`main-gradient ${roboto.className}`}>
         <Navbar />
-
         {children}
-        <MenuIcon />
+        {/* <MenuIcon /> */}
       </body>
     </html>
   )

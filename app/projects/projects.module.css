@@ -1,31 +1,14 @@
 .container {
     max-width: 100%;
-    /* padding: 0 1rem; */
-    /* margin: 4rem auto 8rem; */
 }
-/* Container for the list of projects */
+
 .projectList {
-  display: flex;
+  display: grid;
   flex-direction: wrap;
-  gap: 40px;
+  gap: 20px;
   padding: 20px;
   justify-content: center;
 }
-  
-  /* Each project in the list */
-  /* .project {
-    height: 300px;
-    padding: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.9px);
-    -webkit-backdrop-filter: blur(4.9px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    transition: background-color 0.3s ease;
-  } */
   
   /* Additional styles for the first item in each row */
   .project:first-child {

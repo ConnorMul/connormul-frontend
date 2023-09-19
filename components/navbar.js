@@ -27,16 +27,16 @@ export default function Navbar() {
                 </Link>
             </div>
             <div className={`navLinks ${roboto.className}`}>
-                <Link href="/">
+                <Link href='#title' spy={true} smooth={true} duration={500}>
                     Home
                 </Link>
-                <Link href="/projects">
-                    Projects
-                </Link>
-                <Link href="/about">
+                <Link href='#about' spy={true} smooth={true} duration={500}>
                     Who's Connor?
                 </Link>
-                <Link href="/contact">
+                <Link href='#projects' spy={true} smooth={true} duration={500}>
+                    Projects
+                </Link>
+                <Link href='#contact-me' spy={true} smooth={true} duration={500}>
                     Contact
                 </Link>
             </div>

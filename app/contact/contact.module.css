@@ -7,11 +7,15 @@
     width: 40%;
     padding: 2rem;
     margin: 25px 40px 10px 40px;
-    background: rgba(255, 255, 255, 0.26);
+    background: rgba(252, 244, 107, 0.26);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgb(225, 226, 115);
     transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    height: 200px;
 }

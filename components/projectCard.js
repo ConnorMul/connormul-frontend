@@ -22,15 +22,18 @@ export default function ProjectCard({ project }) {
                     alt="Connor Mulholland"
                     width={260}
                     height={400}
-
                 />
             </div>
             <div className='card-content'>
                 <Link href={`/projects/${project.id}`}>
                     <h3 className='card-name'>{project.name}</h3>
                 </Link>
-                <p>{project.description}</p>
-                <p>{formattedDate}</p>
+                <p className='card-description'>{project.description}</p>
+                <div className="card-links">
+                    <a href={project.frontend} className='card-frontend'>Frontend</a>
+                    <a href={project.backend} className='card-backend'>Backend</a>
+                </div>
+                <p className='card-date'>{formattedDate}</p>
             </div>
         </div>
     )

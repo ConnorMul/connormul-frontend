@@ -5,12 +5,12 @@ import { allProjects } from '@/lib/projects'
 export default function ProjectsList() {
     return (
         <>
-            <div className="projectTitleContainer">
-                <h2 className='projectTitle'>Projects</h2>
+            <div className="project-title-container">
+                <h2 className='project-title'>Projects</h2>
             </div>
             <div className={styles.projectList}>
                 {allProjects.map((project) => (
-                    <ProjectCard project={project} key={project.id} image="/Addison.png" />
+                    <ProjectCard project={project} key={project.id} />
                 ))}
             </div>
         </>

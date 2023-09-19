@@ -17,16 +17,9 @@
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    background-color: rgb(255, 255, 255);
-    font-family: fantasy, sans-serif; */
+  
 }
+
 /* HELLO CONTAINER AND TEXT */
 .main-title {
   padding: 15% 0 0 0;
@@ -45,7 +38,7 @@ body {
 /* BUTTONS */
 
 .download-button {
-  background-color: #6ab1fc;
+  background: linear-gradient(44deg, rgb(231, 54, 243) 0%, rgb(123, 97, 255) 100%);
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -58,14 +51,25 @@ body {
   background-color: #0056b3;
 }
 
-/* END BUTTONS */
-
-.pageTitle {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
+.download-button-container {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 15px;
 }
+
+.view-button {
+  background: linear-gradient(310deg, rgb(231, 54, 243) 0%, rgb(123, 97, 255) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* END BUTTONS */
 
 .my-links a {
   color: #0070f3;
@@ -148,17 +152,17 @@ body {
 
 /* PROJECT LIST */
 
-.projectTitleContainer {
+.project-title-container {
   text-align: center;
   font-size: 32px;
 }
 
 .project-list-container {
-  /* padding: 9%; */
   width: 100%;
   align-items: center;
   margin: 10% 0 0 0;
   flex: wrap;
+  gap: 10px;
 }
 
 /* END PROJECT LIST */
@@ -167,9 +171,8 @@ body {
 
 .card {
   position: relative;
-  display: inline-block;
-  height: 375px;
-  width: 300px;
+  height: 425px;
+  width: 800px;
   background: rgba(255, 255, 255, 0.26);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -189,23 +192,56 @@ body {
 }
 
 .card-content {
-  padding: 10px;
-  background-color: #fff;
-  transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
   position: absolute;
-  bottom: 10;
+  top: 0;
   left: 0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .card-name {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: left;
+
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 10px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-links {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  display: flex;
+  gap: 10px; /* Adjust the gap between links */
+  margin-bottom: 16px;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.card-date {
+  margin: 0;
+  align-self: flex-end; /* Align to the bottom right */
 }
 
 .card:hover {
@@ -223,57 +259,6 @@ body {
   align-items: center;
 }
 
-/* @keyframes anim {
-	0%,
-	100% {
-		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
-		box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset,
-			0 -2vmin 7vmin purple inset;
-	}
-
-	10% {
-		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
-	}
-
-	20% {
-		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
-	}
-
-	30% {
-		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
-		box-shadow: 0 -4vmin 8vmin hotpink inset, -1vmin -2vmin 6vmin LightPink inset,
-			-1vmin -2vmin 4vmin MediumPurple inset, 1vmin 4vmin 8vmin purple inset;
-	}
-
-	40% {
-		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
-	}
-
-	50% {
-		border-radius: 100%;
-		box-shadow: 0 4vmin 16vmin hotpink inset, 0 2vmin 5vmin LightPink inset, 0 4vmin 4vmin MediumPurple inset,
-			0 6vmin 8vmin purple inset;
-	}
-
-	60% {
-		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
-	}
-
-	70% {
-		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
-		box-shadow: 1vmin 1vmin 8vmin LightPink inset,
-			2vmin -1vmin 4vmin MediumPurple inset, -1vmin -1vmin 16vmin purple inset;
-	}
-
-	80% {
-		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
-	}
-
-	90% {
-		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
-	}
-} */
-
 .main-gradient {
   background: url('/testGradient.svg') 0% 0% / cover no-repeat;
   background-repeat: no-repeat;
@@ -285,4 +270,11 @@ body {
   object-fit: cover;
   object-position: center;
   /* margin-bottom: 25%; */
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
 }
