@@ -5,7 +5,7 @@ import AboutCard from '@/components/aboutCard'
 import DownloadButton from '@/components/downloadButton'
 import TestModal from '@/components/TestModal'
 import ContactMe from '@/components/ContactMe'
-import Contact from './contact/page'
+import TrustedBy from '@/components/TrustedBy'
 
 export const metadata = {
   title: 'Connor Mulholland',
@@ -24,10 +24,13 @@ export default function Home() {
         </div>
         <div className="download-button-container">
           <TestModal />
-          <DownloadButton fileUrl='/Connor-Mulhollands-Resume.pdf' fileName='My Resume'/>
+          <DownloadButton fileUrl='/Connor-Mulhollands-Resume.pdf' fileName='Connor-Mulhollands-Resume'/>
         </div>
         <div className="about-card-container" id='about'>
           <AboutCard />
+        </div>
+        <div className="trusted-by-main-container">
+          <TrustedBy />
         </div>
         <div className="project-list-container" id='projects'>
           <ProjectsList />

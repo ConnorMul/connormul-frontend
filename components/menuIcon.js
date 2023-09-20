@@ -1,5 +1,4 @@
 
-
 export default function MenuIcon({ children }) {
     return (
         <div className="menuContainer">

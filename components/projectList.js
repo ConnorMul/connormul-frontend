@@ -1,5 +1,5 @@
 import ProjectCard from './projectCard'
-import styles from '../app/projects/projects.module.css'
+import styles from '../styles/projects.module.css'
 import { allProjects } from '@/lib/projects'
 
 export default function ProjectsList() {

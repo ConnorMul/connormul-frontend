@@ -31,7 +31,7 @@ export default function Navbar() {
                     Home
                 </Link>
                 <Link href='#about' spy={true} smooth={true} duration={500}>
-                    Who's Connor?
+                    About
                 </Link>
                 <Link href='#projects' spy={true} smooth={true} duration={500}>
                     Projects

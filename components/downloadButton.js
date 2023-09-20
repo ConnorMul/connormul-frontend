@@ -11,7 +11,7 @@ export default function DownloadButton({ fileUrl, fileName }) {
 
   return (
     <button className="download-button" onClick={handleButtonClick}>
-      Download {fileName}
+      Download My Resume
     </button>
   );
 }

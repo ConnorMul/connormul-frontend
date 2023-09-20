@@ -30,8 +30,8 @@ export default function ProjectCard({ project }) {
                 </Link>
                 <p className='card-description'>{project.description}</p>
                 <div className="card-links">
-                    <a href={project.frontend} className='card-frontend'>Frontend</a>
-                    <a href={project.backend} className='card-backend'>Backend</a>
+                    <a href={project.frontend} className='card-frontend' target='_blank'>Frontend</a>
+                    <a href={project.backend} className='card-backend' target='_blank'>Backend</a>
                 </div>
                 <p className='card-date'>{formattedDate}</p>
             </div>
